@@ -1,0 +1,10 @@
+/* Dark Mode */
+body {
+    color: white;
+    background-color: rgb(33, 37, 41);
+}
+
+/* Link Recoloring */
+a {
+    color: orange;
+}

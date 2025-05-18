@@ -1,0 +1,31 @@
+#section-about-us {
+    position: relative;
+    /* Relative path starts at CSS file position apparently ): */
+    background-image: url('../../../img/main-page/section/about-us/krastorio-chan.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    height: 40vh;
+    /* Moves items down */
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 20px;
+}
+
+#section-about-us .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Dark kinda see-trough thingy */
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+#section-about-us .container {
+    position: relative;
+    /* So the text is above the image */
+    z-index: 2;
+}

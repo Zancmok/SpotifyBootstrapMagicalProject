@@ -1,0 +1,32 @@
+/* Orange button, black text */
+header .dropdown-toggle {
+    background-color: orange;
+    color: black;
+    border: none;
+}
+
+/* When mouse intersects the button */
+header .dropdown-toggle:hover {
+    background-color: orange;
+    color: black;
+    opacity: 50%;
+}
+
+/* Dark dropdown menu with white text, border and shadow */
+header .dropdown-menu {
+    background-color: #222;
+    color: white;
+    border: 2px solid #fff;       /* Slick white border around the items */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);  /* Small shadow */
+}
+
+/* Menu items */
+header .dropdown-item {
+    color: white;
+}
+
+/* When mouse hovers an item */
+header .dropdown-item:hover {
+    background-color: #555;
+    color: white;
+}

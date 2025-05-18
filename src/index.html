@@ -1,13 +1,159 @@
 <!DOCTYPE html>
-<html>
+<html lang="SI">
 <head>
     <meta charset="UTF-8"/>
-    <meta name="keywords" content="Zancmok, Leek Modding, Factorio, Mods">
-    <meta name="description" content="Kolekcija modifikacij od ekipe Leek Modding.">
-    <meta name="author" content="Zancmok, Nejc Germovšek, Leek Modding">
-    <title>Leek Modding</title>
+
+    <!-- Basic Website Information -->
+    <meta name="keywords" content="Zancmok, Leek Development, Factorio, Mods">
+    <meta name="description" content="Kolekcija modifikacij od ekipe Leek Development.">
+    <meta name="author" content="Zancmok, Nejc Germovšek, Leek Development">
+    <title>Leek Development</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+
+    <!-- Local CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/head-dropdown.css" rel="stylesheet">
+    <link href="css/main-page/style.css" rel="stylesheet">
+    <link href="css/main-page/section/about-us.css" rel="stylesheet">
+    <link href="css/main-page/section/faq.css" rel="stylesheet">
 </head>
 <body>
-    
+    <!-- Header -->
+    <header class="d-flex align-items-center justify-content-between p-4 bg-dark text-white">
+    <!-- The Logo and the Title -->
+        <div class="d-flex align-items-center">
+            <img src="./img/logo.png" alt="Leek Development Logo" width="100" height="100" class="me-4">
+            <!-- The div magic makes it possible so the logo is on the left of the title :) -->
+            <div>
+                <h1 class="display-4 mb-1">Leek Development</h1>
+                <p class="mb-0">Programerji za Factorio mod-e.</p>
+            </div>
+        </div>
+
+        <!-- The Dropdown Menu -->
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                Strani
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="index.html">Leek Development</a></li>
+                <li><a class="dropdown-item" href="#">Mod1</a></li>
+                <li><a class="dropdown-item" href="#">Mod2</a></li>
+                <li><a class="dropdown-item" href="#">Mod3</a></li>
+                <li><a class="dropdown-item" href="#">Mod4</a></li>
+                <li><a class="dropdown-item" href="#">Mod5</a></li>
+                <li><a class="dropdown-item" href="#">Mod6</a></li>
+                <li><a class="dropdown-item" href="#">Mod7</a></li>
+                <li><a class="dropdown-item" href="#">Mod8</a></li>
+                <li><a class="dropdown-item" href="#">Mod9</a></li>
+                <li><a class="dropdown-item" href="#">Mod10</a></li>
+                <li><a class="dropdown-item" href="#">Mod11</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- The body of the document -->
+    <main>
+        <!-- Section: About us -->
+        <section  id="section-about-us">
+            <div class="overlay"></div>
+            <div class="container">
+                <h1>Kdo smo:</h1>
+                <p>Leek Development je predana skupina razvijalcev, specializiranih za ustvarjanje naprednih in kakovostnih modifikacij za igro <a href="https://www.factorio.com/" target="_blank">Factorio</a>. Z združevanjem tehničnega znanja, ustvarjalnosti in strasti do igranja, ustvarjamo edinstvene rešitve, ki nadgrajujejo osnovno igralno izkušnjo. Naša vizija je oblikovati funkcionalnosti, ki so tako intuitivne kot tudi inovativne – od optimizacije proizvodnih verig do popolnoma novih sistemov igranja. Skozi odprtost do skupnosti in visoke standarde kakovosti postavljamo nove mejnike v svetu modifikacij.</p>
+            </div>
+        </section>
+
+        <!-- Section: Team -->
+        <section id="section-team">
+            <div class="container text-center">
+                <h1>Ekipa</h1>
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <img src="img/main-page/section/team/zancmok.png" alt="Zancmok profilna slika" class="rounded-circle mb-3" width="150" height="150">
+                        <h2>Zancmok</h2>
+                        <p class="paragraph">
+                            Ustanovitelj ter glavni razvijalec. Njegova koda ne vsebuje napak, samo izjeme.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/main-page/section/team/vidis.png" alt="Vidis profilna slika" class="rounded-circle mb-3" width="150" height="150">
+                        <h2>Vidis</h2>
+                        <p class="paragraph">
+                            Z ostrim očesom za detajle in neizprosnim občutkom za dizajn, je Vidis naš zadnji filter med hroščem in popolnostjo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: FAQ -->
+        <section id="section-faq">
+            <div class="container">
+                <h1 class="text-center">FAQ</h1>
+
+                <div>
+                    <h3>Kakšne veščine potrebujem, da se pridružim Leek Development?</h3>
+                    <p>Iščemo posameznike z naprednim znanjem programskega jezika Lua, saj je to osnovno orodje za razvoj modov v igri Factorio. Poleg tega je pomembno, da:</p>
+                    <ol>
+                        <li>
+                            <p>Imaš dobro razumevanje igre Factorio – igralska izkušnja nam pomaga pri ustvarjanju uravnoteženih in zabavnih mehanik.</p>
+                        </li>
+                        <li>
+                            <p>Pokažeš motivacijo in kreativnost pri snovanju idej ter tehnični izvedbi modov.</p>
+                        </li>
+                        <li>
+                            <p>Znaš ustvarjati glasbo ali zvočne efekte – iščemo tudi umetnike za zvočno identiteto naših projektov.</p>
+                        </li>
+                    </ol>
+                </div>
+
+                <div>
+                    <h3>Koliko moram biti star, da se lahko pridružim vaši ekipi?</h3>
+                    <p>Ekipa Leek Development deluje iz Slovenije, zato moraš biti za uradno sodelovanje star najmanj 18 let, oziroma najmanj 16 let, če gre za poletno ali študentsko delo, skladno z zakonodajo.</p>
+                </div>
+
+                <div>
+                    <h3>Katere tehnologije uporabljate za razvoj modov?</h3>
+                    <p>Pri razvoju naših modov uporabljamo preizkušena in učinkovita orodja, ki nam omogočajo strukturirano in timsko delo:</p>
+                    <ul>
+                        <li>
+                            <p><b>Lua</b> – primarni programski jezik za razvoj Factorio modov.</p>
+                        </li>
+                        <li>
+                            <p><b>Visual Studio Code</b> – glavno razvojno okolje, s prilagodljivimi razširitvami za Lua in Git.</p>
+                        </li>
+                        <li>
+                            <p><b>Git + GitHub</b> – za nadzor verzij, sodelovanje v ekipi in upravljanje projektov.</p>
+                        </li>
+                        <li>
+                            <p><b>Discord</b> – naša glavna komunikacijska platforma, kjer poteka načrtovanje, testiranje in deljenje idej.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Projects -->
+        <section id="section-projects">
+            <h1 class="text-center">Naši Projekti</h1>
+            <p class="text-center">Poglobite se v <a href="">našo zbirko modov</a>, ki izboljšujejo in obogatijo vašo Factorio izkušnjo.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p>&copy; 2025 Leek Development. Vse pravice pridržane.</p>
+            <p>Industrijska ulica 42. 1000 Ljubljana</p>
+            <p>+386 41 321 654</p>
+            <p>info@leekdev.si</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+
+    <!-- Local JS -->
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,42 @@
+/* This, this..., this is what i call bullshit */
+/* For every odd div in the container it applies said css properties */
+#section-faq .container div:nth-child(odd) {
+    text-align: right;
+    padding-left: 20%;
+}
+
+#section-faq .container div:nth-child(even) {
+    text-align: left;
+    padding-right: 20%;
+}
+
+#section-faq .container div {
+    padding-top: 120px;
+}
+
+#section-faq {
+    position: relative;
+    /* Relative path starts at CSS file position apparently ): */
+    background-image: url('../../../img/main-page/section/faq/factorio-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+#section-faq .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Dark kinda see-trough thingy */
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+#section-faq .container {
+    position: relative;
+    /* So the text is above the image */
+    z-index: 2;
+}
