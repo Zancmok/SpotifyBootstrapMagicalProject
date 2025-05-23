@@ -3,6 +3,7 @@ header .dropdown-toggle {
     background-color: orange;
     color: black;
     border: none;
+    font-size: 2em;
 }
 
 /* When mouse intersects the button */
@@ -18,6 +19,7 @@ header .dropdown-menu {
     color: white;
     border: 2px solid #fff;       /* Slick white border around the items */
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);  /* Small shadow */
+    font-size: 1.2em;
 }
 
 /* Menu items */
