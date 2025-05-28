@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="SI">
+<head>
+  <meta charset="UTF-8"/>
+
+  <!-- Basic Website Information -->
+  <meta name="keywords" content="Zancmok, Leek Development, Factorio, Mods">
+  <meta name="description" content="Kolekcija modifikacij od ekipe Leek Development.">
+  <meta name="author" content="Zancmok, Nejc Germovšek, Leek Development">
+  <title>Leek Development/Join Us</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+
+  <!-- Local CSS -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/head-dropdown.css" rel="stylesheet">
+  <link href="css/join-us-page/style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="d-flex align-items-center justify-content-between p-4 bg-dark text-white">
+    <!-- The Logo and the Title -->
+    <a href="index.html" style="text-decoration: none; color: inherit;">  <!-- The link to the main page. -->
+      <div class="d-flex align-items-center">
+        <img src="./img/logo.png" alt="Leek Development Logo" width="100" height="100" class="me-4">
+        <!-- The div magic makes it possible so the logo is on the left of the title :) -->
+        <div>
+          <h1 class="display-4 mb-1">Leek Development</h1>
+          <p class="mb-0">Programerji za Factorio mod-e.</p>
+        </div>
+      </div>
+    </a>
+
+    <!-- The Dropdown Menu -->
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+        Strani
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end">
+        <li><a class="dropdown-item" href="index.html">Leek Development</a></li>
+        <li><a class="dropdown-item" href="projects-page.html">Naši projekti</a></li>
+        <li><a class="dropdown-item" href="#">Mod1</a></li>
+        <li><a class="dropdown-item" href="#">Mod2</a></li>
+        <li><a class="dropdown-item" href="#">Mod3</a></li>
+        <li><a class="dropdown-item" href="#">Mod4</a></li>
+        <li><a class="dropdown-item" href="#">Mod5</a></li>
+        <li><a class="dropdown-item" href="#">Mod6</a></li>
+        <li><a class="dropdown-item" href="#">Mod7</a></li>
+        <li><a class="dropdown-item" href="#">Mod8</a></li>
+        <li><a class="dropdown-item" href="goofy-page.html">???</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- The body of the document -->
+  <main>
+    <!-- Section: Title -->
+    <section class="text-center">
+      <h1>Če mislite, da imate, kar potrebujemo, potem izpolnite ta obrazec</h1>
+    </section>
+
+    <!-- Section: Form -->
+    <section style="margin: 50px;">
+      <form>
+        <fieldset>
+          <legend>Osebni podatki</legend>
+
+          <label for="fullName">Polno ime:</label>
+          <input type="text" id="fullName" name="fullName" required><br><br>
+
+          <label for="email">Email naslov:</label>
+          <input type="email" id="email" name="email" required><br><br>
+
+          <label for="phone">Telefonska številka:</label>
+          <input type="tel" id="phone" name="phone"><br><br>
+
+          <label for="dob">Datum rojstva:</label>
+          <input type="date" id="dob" name="dob"><br><br>
+
+          <label for="color">Najljubša barva (zelo pomembno!):</label>
+          <input type="color" id="color" name="color"><br><br>
+
+          <label for="linkedin">LinkedIn profil (če obstaja):</label>
+          <input type="url" id="linkedin" name="linkedin"><br><br>
+
+          <label for="avatar">Naloži svojo sliko (ni obvezno):</label>
+          <input type="file" id="avatar" name="avatar" accept="image/*"><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Izkušnje in veščine</legend>
+
+          <label for="experience">Koliko let izkušenj imate?</label>
+          <input type="number" id="experience" name="experience" min="0" max="50"><br><br>
+
+          <label for="skills">Katere veščine imate? (držite Ctrl za več izbir)</label><br>
+          <select id="skills" name="skills" multiple size="5">
+            <option>Programiranje</option>
+            <option>Oblikovanje</option>
+            <option>Marketing</option>
+            <option>Upravljanje projektov</option>
+            <option>Jemanje kave</option>
+          </select><br><br>
+
+          <label for="rate">Ocenite svoje znanje (1–10):</label>
+          <input type="range" id="rate" name="rate" min="1" max="10"><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Useless podatki (za šolske točke)</legend>
+
+          <label for="moon">Kolikokrat ste pogledali v luno letos?</label>
+          <input type="number" id="moon" name="moon"><br><br>
+
+          <label for="pet">Če bi bili žival, katera bi bili?</label>
+          <input type="text" id="pet" name="pet"><br><br>
+
+          <label for="dream">Opis vaših sanj (do 200 znakov):</label><br>
+          <textarea id="dream" name="dream" maxlength="200" rows="3"></textarea><br><br>
+
+          <label>Ali verjamete v NLP?</label><br>
+          <input type="radio" id="yes" name="ufo" value="yes">
+          <label for="yes">Ja</label><br>
+          <input type="radio" id="no" name="ufo" value="no">
+          <label for="no">Ne</label><br><br>
+
+          <label for="timezone">Izberite svoj časovni pas:</label>
+          <input type="text" list="timezones" id="timezone" name="timezone">
+          <datalist id="timezones">
+            <option value="UTC+1">
+            <option value="UTC+2">
+            <option value="UTC-5">
+            <option value="UTC+0">
+            <option value="UTC+9">
+          </datalist><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Pogoji</legend>
+          <label>
+            <input type="checkbox" required>
+            Strinjam se s pogoji, ki jih nisem prebral.
+          </label><br><br>
+        </fieldset>
+
+        <button type="submit">Pošlji obrazec</button>
+        <button type="reset">Ponastavi</button>
+      </form>
+    </section>
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <div class="container">
+      <p>&copy; 2025 Leek Development. Vse pravice pridržane.</p>
+      <p>Industrijska ulica 42. 1000 Ljubljana</p>
+      <p>+386 41 321 654</p>
+      <p>info@leekdev.si</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+
+  <!-- Local JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
