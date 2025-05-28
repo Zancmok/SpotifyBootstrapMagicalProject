@@ -16,13 +16,6 @@ appleImg.src = 'img/goofy-page/apple.png';
 bombsImg.src = 'img/goofy-page/bomb.png';
 heartImg.src = 'img/goofy-page/heart.png';
 
-const dead = new Audio();
-const eat = new Audio();
-const endMusic = new Audio();
-dead.src = 'http://www.flashkit.com/imagesvr_ce/flashkit/soundfx/Cartoon/Bounces/Jump-DJ_SnowF-7574/Jump-DJ_SnowF-7574_hifi.mp3';
-eat.src = 'http://www.flashkit.com/imagesvr_ce/flashkit/soundfx/Cartoon/Drinking/Slurp-Julian-8156/Slurp-Julian-8156_hifi.mp3';
-endMusic.src = 'http://www.flashkit.com/imagesvr_ce/flashkit/loops/Ethnic/Noasis-Thomas_C-10450/Noasis-Thomas_C-10450_hifi.mp3';
-
 let snake = [];
 
 snake[0] = {
@@ -95,7 +88,7 @@ function moveSnake() {
     if (snakeX == food.x && snakeY == food.y) {
         score++;
         scoreSpan.textContent = score;
-        eat.play();
+
         food = {
             x: Math.floor(Math.random() * 19) * box,
             y: Math.floor(Math.random() * 19) * box
@@ -105,7 +98,7 @@ function moveSnake() {
         snake.pop();
         lives++;
         livesSpan.textContent = lives;
-        eat.play();
+
         heart = {
             x: -1,
             y: -1
@@ -114,7 +107,7 @@ function moveSnake() {
         snake.pop();
         lives--;
         livesSpan.textContent = lives;
-        eat.play();
+
         bombs = {
             x: Math.floor(Math.random() * 19) * box,
             y: Math.floor(Math.random() * 19) * box
@@ -143,7 +136,6 @@ function moveSnake() {
         snakeY > 19 * box ||
         (collision(newHead, snake) || lives === 0)
     ) {
-        dead.play();
         endGame();
     }
 
@@ -322,7 +314,46 @@ function resetSnake() {
     snake.length = 1;
 }
 
+function setItem(arr) {
+    const tableBody = document.querySelector('#attemptTable tbody');
+    const newRow = document.createElement('tr');
+
+    // Create time cell
+    const timeCell = document.createElement('td');
+    const currentTime = new Date().toLocaleTimeString();
+    timeCell.textContent = currentTime;
+
+    // Create attempt cell
+    const attemptCell = document.createElement('td');
+    const attemptNumber = arr.length + 1; // Next attempt number
+    attemptCell.textContent = attemptNumber;
+
+    // Append new data to the passed array
+    arr.push({ time: currentTime, attempt: attemptNumber });
+
+    // Append cells to the row
+    newRow.appendChild(timeCell);
+    newRow.appendChild(attemptCell);
+
+    // Append the row to the table
+    tableBody.appendChild(newRow);
+}
+
+
 function endGame() {
+    let item = sessionStorage.getItem("val");
+    let arr = [];
+
+    if (item !== null) {
+        arr = JSON.parse(item); // Convert string to array
+    }
+
+    arr.push({ score: score }); // Add new item
+
+    setItem(arr)
+
+    sessionStorage.setItem("val", JSON.stringify(arr)); // Save back as string
+
     gameInProgress = false;
     setTitle('Konec Igre');
     resetScore();
@@ -332,7 +363,6 @@ function endGame() {
     ctx.fillStyle = "#84b71c";
     ctx.font = "40px Courier, serif";
     ctx.fillText("Konec Igre", cw / 2 - 80, ch / 2 - 20);
-    endMusic.play();
     showGameOverBtn();
     againBtn.textContent = 'Poskusi znova';
     clearInterval(gameInterval);
@@ -370,5 +400,16 @@ document.addEventListener('keydown', function (e) {
             break;
     }
 });
+
+let item = sessionStorage.getItem("val");
+let arr = [];
+
+if (item !== null) {
+    arr = JSON.parse(item); // Convert string to array
+}
+
+arr.push({ score: score }); // Add new item
+
+setItem(arr)
 
 welcomeGame();

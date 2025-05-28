@@ -1,0 +1,17 @@
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+}
+caption {
+    caption-side: top;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+th, td {
+    border: 1px solid #999;
+    padding: 8px 12px;
+    text-align: center;
+}
