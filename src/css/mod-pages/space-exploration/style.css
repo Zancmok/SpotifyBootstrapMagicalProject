@@ -17,3 +17,12 @@ section p {
     line-height: 1.6;
     text-align: left;
 }
+
+/* Me no like weird dots on lefto */
+section ul {
+    list-style-type: none;
+}
+
+section ul li {
+    margin-bottom: 15px;
+}
