@@ -27,3 +27,6 @@
 - Visual Studio Code
 - WebStorm
 - ChatGPT
+
+## Link
+- https://strong-woodpecker.static.domains/src/index.html
