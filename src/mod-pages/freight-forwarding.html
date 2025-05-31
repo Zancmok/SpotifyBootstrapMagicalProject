@@ -15,67 +15,88 @@
   <!-- Local CSS -->
   <link href="../css/style.css" rel="stylesheet">
   <link href="../css/head-dropdown.css" rel="stylesheet">
-  <link href="../css/mod-pages/space-exploration/style.css" rel="stylesheet">
+  <link href="../css/mod-pages/style.css" rel="stylesheet">
 </head>
 <body>
-<!-- Header -->
-<header class="d-flex align-items-center justify-content-between p-4 bg-dark text-white">
-  <!-- The Logo and the Title -->
-  <a href="../index.html" style="text-decoration: none; color: inherit;">  <!-- The link to the main page. -->
-    <div class="d-flex align-items-center">
-      <img src="../img/logo.png" alt="Leek Development Logo" width="100" height="100" class="me-4">
-      <!-- The div magic makes it possible so the logo is on the left of the title :) -->
-      <div>
-        <h1 class="display-4 mb-1">Leek Development</h1>
-        <p class="mb-0">Programerji za Factorio mod-e.</p>
+  <!-- Header -->
+  <header class="d-flex align-items-center justify-content-between p-4 bg-dark text-white">
+    <!-- The Logo and the Title -->
+    <a href="../index.html" style="text-decoration: none; color: inherit;">  <!-- The link to the main page. -->
+      <div class="d-flex align-items-center">
+        <img src="../img/logo.png" alt="Leek Development Logo" width="100" height="100" class="me-4">
+        <!-- The div magic makes it possible so the logo is on the left of the title :) -->
+        <div>
+          <h1 class="display-4 mb-1">Leek Development</h1>
+          <p class="mb-0">Programerji za Factorio mod-e.</p>
+        </div>
       </div>
+    </a>
+
+    <!-- The Dropdown Menu -->
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+        Strani
+      </button>
+      <ol class="dropdown-menu dropdown-menu-end">
+        <li><a class="dropdown-item" href="../index.html">Leek Development</a></li>
+        <li>
+          <ul>
+            <li><a class="dropdown-item" href="../gallery.html">Galerija</a></li>
+            <li><a class="dropdown-item" href="../join-us.html">Pridružite se nam</a></li>
+            <li><a class="dropdown-item" href="../goofy-page.html">???</a></li>
+          </ul>
+        </li>
+        <li><a class="dropdown-item" href="../projects-page.html">Naši projekti</a></li>
+        <li>
+          <ul>
+            <li><a class="dropdown-item" href="space-exploration.html">Space Exploration</a></li>
+            <li><a class="dropdown-item" href="krastorio2.html">Krastorio 2</a></li>
+            <li><a class="dropdown-item" href="freight-forwarding.html">Freight Forwarding</a></li>
+          </ul>
+        </li>
+      </ol>
     </div>
-  </a>
+  </header>
 
-  <!-- The Dropdown Menu -->
-  <div class="dropdown">
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-      Strani
-    </button>
-    <ol class="dropdown-menu dropdown-menu-end">
-      <li><a class="dropdown-item" href="../index.html">Leek Development</a></li>
-      <li>
-        <ul>
-          <li><a class="dropdown-item" href="../gallery.html">Galerija</a></li>
-          <li><a class="dropdown-item" href="../join-us.html">Pridružite se nam</a></li>
-          <li><a class="dropdown-item" href="../goofy-page.html">???</a></li>
-        </ul>
-      </li>
-      <li><a class="dropdown-item" href="../projects-page.html">Naši projekti</a></li>
-      <li>
-        <ul>
-          <li><a class="dropdown-item" href="space-exploration.html">Space Exploration</a></li>
-          <li><a class="dropdown-item" href="krastorio2.html">Krastorio 2</a></li>
-          <li><a class="dropdown-item" href="freight-forwarding.html">Freight Forwarding</a></li>
-        </ul>
-      </li>
-    </ol>
-  </div>
-</header>
+  <!-- The body of the document -->
+  <main>
+    <!-- Section: Title -->
+    <section class="text-center py-5">
+      <h1>Freight Forwarding</h1>
+      <p>Manjša predelava z osredotočenostjo na raznolikost logistike na dolge razdalje.
+        Prevažaj zabojniške predmete po kopnem in morju z vlaki in ladjami!
+        Najprej se z vlaki odpravi na rob začetnega otoka, da najdeš svinec, nato pa izpluj proti naftnim nahajališčem na morju s tanker ladjami, poglobi morsko dno za kovinske nodule in pridobi titan z drugih otokov. Na koncu boš prevažal materiale do oddaljenih bazenov lave, kjer boš talil titanovo jeklo – ključno sestavino za raketne dele.</p>
+    </section>
 
-<!-- The body of the document -->
-<main>
-</main>
+    <!-- Section: Installation -->
+    <section class="text-center py-5">
+      <h1>Namestitev</h1>
+      <p>Prenesi in namesti z uradnega portala za mode Factorio.</p>
+    </section>
 
-<!-- Footer -->
-<footer class="bg-dark text-white text-center py-4 mt-5">
-  <div class="container">
-    <p>&copy; 2025 Leek Development. Vse pravice pridržane.</p>
-    <p>Industrijska ulica 42. 1000 Ljubljana</p>
-    <p>+386 41 321 654</p>
-    <p>info@leekdev.si</p>
-  </div>
-</footer>
+    <!-- Section: Features -->
+    <section class="text-center py-5">
+      <h1>Posodobitev 2.0</h1>
+      <p>Posodabljanje Freight Forwarding za združljivost s Factorio 2.0 je v teku, zaključek pa upam doseči maja/junija 2025. Po tem bom mod prilagodil za Space Age, če to ne bo preveč dela, sicer pa bom nadaljeval z načrtom za ustvarjanje novega planeta za SA, navdihnjenega z FF.</p>
+      <p>Freight Forwarding je manjša predelava z osredotočenostjo na raznolikost logistike na dolge razdalje.</p>
+      <p>Napredovanje tehnologije je skrbno uravnoteženo glede na prilagojeno postopkovno generiranje otoških map in razporeditev virov. Za učinkovito prevažanje je treba pred potovanjem predmete naložiti v zabojnike, vendar je zaradi izredno kompaktnega prevoza prenos z vlakov na ladje precej enostavnejši.</p>
+    </section>
+  </main>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <div class="container">
+      <p>&copy; 2025 Leek Development. Vse pravice pridržane.</p>
+      <p>Industrijska ulica 42. 1000 Ljubljana</p>
+      <p>+386 41 321 654</p>
+      <p>info@leekdev.si</p>
+    </div>
+  </footer>
 
-<!-- Local JS -->
-<script src="../js/main.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+
+  <!-- Local JS -->
+  <script src="../js/main.js"></script>
 </body>
 </html>
